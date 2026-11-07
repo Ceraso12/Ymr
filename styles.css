@@ -5,3 +5,21 @@
 /* Each top-level category is also available as a direct page. The home page stays editorial and links into the themed shops. */
 body.page-pet main>section:not(#pet):not(.faq-section):not(.contact-strip),body.page-autorais main>section:not(#autorais):not(.faq-section):not(.contact-strip),body.page-brindes main>section:not(#brindes):not(.faq-section):not(.contact-strip),body.page-variados main>section:not(#variados):not(.faq-section):not(.contact-strip){display:none}
 body.page-pet main>#pet,body.page-autorais main>#autorais,body.page-brindes main>#brindes,body.page-variados main>#variados{min-height:calc(100vh - 82px)}
+body[data-theme="autorais"]{background:#120d16;color:#f3e9dc}
+body[data-theme="autorais"] .site-header{background:rgba(24,16,29,.94);border-color:#f1e1cb1c;color:#f5ebdf}
+body[data-theme="autorais"] .nav-link{color:#d8cadc}
+body[data-theme="autorais"] .nav-link.active{color:#fff5e8}
+body[data-theme="autorais"] .collection-section{background:#17111d;color:#f4eadc}
+body[data-theme="autorais"] .collection-header h2{color:#f4eadc}
+body[data-theme="autorais"] .collection-header p{color:#c7b9c9}
+body[data-theme="autorais"] .collection-seal{border-color:#806487;color:#d2b6db}
+body[data-theme="autorais"] .collection-section .product-info h3{color:#f4eadc}
+body[data-theme="autorais"] .collection-section .product-category{color:#b6a3bd}
+body[data-theme="autorais"] .collection-section .product-description{color:#c3b8c7}
+body[data-theme="autorais"] .collection-section .product-price{color:#ead9c2}
+body[data-theme="autorais"] .faq-section{background:#201727;color:#f2e8f4}
+body[data-theme="autorais"] .faq-section h2{color:#f2e8f4}
+body[data-theme="autorais"] .faq-section h2 span{color:#d2a6e6}
+body[data-theme="autorais"] .faq-section>div:first-child>p,body[data-theme="autorais"] .faq-list details p{color:#c6b8cb}
+body[data-theme="autorais"] .faq-list details,body[data-theme="autorais"] .faq-list details:first-child{border-color:#ffffff25}
+body[data-theme="autorais"] .faq-list summary{color:#f2e8f4}
