@@ -8,7 +8,12 @@ $action = (string) ($_GET['action'] ?? '');
 
 if ($method === 'GET' && $action === 'status') {
     $auth = is_file(ymr_auth_file()) ? json_decode((string) file_get_contents(ymr_auth_file()), true) : null;
-    ymr_json(['configured' => is_array($auth) && !empty($auth['password_hash']), 'loggedIn' => ymr_is_admin()]);
+    $loggedIn = ymr_is_admin();
+    ymr_json([
+        'configured' => is_array($auth) && !empty($auth['password_hash']),
+        'loggedIn' => $loggedIn,
+        'csrf' => $loggedIn ? $_SESSION['ymr_csrf'] : null,
+    ]);
 }
 
 if ($method !== 'POST' && !($method === 'GET' && $action === 'list')) ymr_json(['error' => 'Método não permitido.'], 405);
