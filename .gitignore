@@ -1,0 +1,6 @@
+/storage/admin-auth.json
+/storage/catalog.json
+/storage/catalog-*.tmp
+/assets/uploads/*
+!/assets/uploads/.htaccess
+!/assets/uploads/.gitkeep
